@@ -1,0 +1,55 @@
+.ico {
+  display: block;
+  position: relative;
+}
+
+.ico--phone {
+  background-image: url('../../images/icon-phone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 21px;
+}
+
+.ico--email {
+  background-image: url('../../images/icon-email.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 15px;
+}
+
+.icon--arrow {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 15px;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+  }
+
+  &::before {
+    border-top: 2px solid #676767;
+    border-left: 2px solid #676767;
+    height: 12px;
+    width: 12px;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: border 300ms ease-in-out;
+  }
+
+  &::after {
+    height: 2px;
+    width: 100%;
+    background-color: #676767;
+    left: 0;
+    transition:  background 300ms ease-in-out;
+  }
+}

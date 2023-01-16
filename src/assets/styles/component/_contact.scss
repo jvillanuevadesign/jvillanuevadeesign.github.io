@@ -1,0 +1,113 @@
+.contact {
+  position: relative;
+  padding-bottom: 100px;
+  overflow: visible;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -450px;
+    left: 0;
+    background: url('../../images/marble.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100% + 450px);
+    opacity: 0.5;
+  }
+}
+
+.contact__info {
+  position: relative;
+  background-color: $color-white;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 100px 60px;
+  box-shadow: -2px 2px 15px 5px rgba($color-gray5, 0.2);
+
+  @include mq(767, max) {
+    padding: 56px 24px;
+  }
+
+  p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: $color-gray2;
+  }
+}
+
+.contact__info-btn {
+  display: flex;
+  gap: 30px;
+
+  @include mq(855, max) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.contact__info-btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: inset 0 0 0 1px $color-gray2;
+  height: 60px;
+  width: 50%;
+  color: $color-gray2;
+  padding: 0 20px;
+  position: relative;
+
+  @include mq(855, max) {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    border: 1px solid transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  // This covers the top & right borders (expands right, then down)
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // And this the bottom & left borders (expands left, then up)
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      border-top-color: $color-red; // Make borders visible
+      border-right-color: $color-red;
+      transition:
+        width 0.25s ease-out, // Width expands first
+        height 0.25s ease-out 0.25s; // And then height
+    }
+
+    &::after {
+      border-bottom-color: $color-red; // Make borders visible
+      border-left-color: $color-red;
+      transition:
+        border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+        width 0.25s ease-out 0.5s, // And then exanding width
+        height 0.25s ease-out 0.75s; // And finally height
+    }
+  }
+}

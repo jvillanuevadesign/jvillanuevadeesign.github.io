@@ -1,0 +1,335 @@
+.hero {
+  position: relative;
+  padding: 24px;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 56px;
+
+  @include mq(1024, min) {
+    padding: 56px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    width: 65%;
+    height: 50%;
+    background-color: $color-accent;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: calc(100% + 410px);
+    background: url('../../images/accent-1.jpg') no-repeat;
+    background-size: cover;
+
+    @include mq(800, max) {
+      height: 130%;
+    }
+
+    @include mq(500, max) {
+      height: 120%;
+    }
+  }
+}
+
+.hero-preload {
+  position: absolute;
+  background-color: $color-gray3;
+  
+  height: 100vh;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  transition: width 1s ease-in-out, height 1s ease-in-out, opacity 1s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../../images/slider/slider2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade_bg 800ms ease-in forwards;
+  }
+
+  .is-loaded & {
+    height: calc(100vh - 112px);
+    width: calc(100vw - 112px);
+    opacity: 1;
+  }
+}
+
+.hero__inner {
+  position: relative;
+  box-shadow: inset 0 0 200px 10px rgb(85 83 83 / 80%);
+  background-color: $base-color;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 1.5s 200ms ease-in-out;
+
+  .is-loaded & {
+    opacity: 1;
+  }
+}
+
+.hero__swiper {
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .swiper-slide {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: inset 0 0 292px 50px rgb(45 44 44);
+      z-index: 1;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+  }
+}
+
+.hero__swiper-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  height: 60px;
+  z-index: 1;
+}
+
+.hero__swiper-btn-next {
+  i {
+    transform: scaleX(-1);
+  }
+
+  &:hover {
+    transform: translateX(20px);
+  }
+}
+
+.hero__swiper-btn-prev {
+  &:hover {
+    transform: translateX(-20px);
+  }
+}
+
+.hero__swiper-btn-next,
+.hero__swiper-btn-prev {
+  cursor: pointer;
+  transition: transform 400ms ease-in-out;
+
+  i {
+    &::before {
+      border-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &:hover {
+    i {
+      &::before {
+        border-color: $color-red;
+      }
+
+      &::after {
+        background-color: $color-red;
+      }
+    }
+  }
+
+  &.swiper-button-disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+}
+
+.hero__title {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7.5vw;
+  font-weight: 700;
+  color: $color-white;
+  opacity: 0.6;
+  z-index: 4;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  
+
+  &.is-preload {
+    font-size: 9vw;
+    opacity: 1;
+  }
+
+  .is-loaded & {
+    transition: all 1s ease-in-out;
+    font-size: 7.5vw;
+    opacity: 0.6;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: -3px;
+    transition: opacity;
+    opacity: 0;
+
+    &:nth-child(1) {
+      animation: fade_letter 300ms ease-in forwards;
+      animation-delay: 300ms;
+    }
+
+    &:nth-child(2) {
+      animation: fade_letter 300ms ease-in forwards;
+      animation-delay: 700ms;
+    }
+
+    &:nth-child(5),
+    &:nth-child(3) {
+      opacity: 1;
+      background:linear-gradient(#fff 0 0) 0 0;
+      background-size: 0% 200%;
+      background-repeat:no-repeat;
+      -webkit-background-clip:text;
+      background-clip:text;
+      color: #0000;
+
+      animation: text_animate 1s linear forwards;
+      animation-delay: 1.5s;
+    }
+
+    &:nth-child(5) {
+      animation-delay: 1.5s;
+    }
+
+    &:nth-child(4) {
+      animation: fade_letter 300ms ease-in forwards;
+      animation-delay: 1s;
+    }
+  }
+}
+
+.hero__contact {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: -2px;
+  right: -1px;
+  height: 60px;
+  width: 80%;
+  max-width: 240px;
+  padding: 10px 22px;
+  background-color: $color-white;
+  z-index: 2;
+
+  @include mq(650, min) {
+    max-width: 465px;
+  }
+
+  @include mq(1024, min) {
+    width: 465px;
+  }
+
+  span {
+    display: block;
+    color: $color-gray2;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+.hero__contact-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    &::after {
+      content: '';
+      position: relative;
+      display: block;
+      height: 20px;
+      width: 1px;
+      margin: 0 30px;
+      background-color: $color-gray2;
+    }
+  }
+
+  &:nth-child(2) {
+    span {
+      display: none;
+
+      @include mq(650, min) {
+        display: block;
+      }
+    }
+  }
+}
+
+.hero__contact-link {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes fade_letter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade_bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes text_animate {
+  0% {
+    background-size: 0% 200%; 
+  }
+  100% {
+    background-size: 200% 200%; 
+  }
+}
