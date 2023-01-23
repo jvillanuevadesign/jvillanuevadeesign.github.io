@@ -29,15 +29,50 @@ import hl7 from '../assets/images/house-letchon/img7.jpg'
 import hl8 from '../assets/images/house-letchon/img8.jpg'
 import hl9 from '../assets/images/house-letchon/img9.jpg'
 
-import other1 from '../assets/images/other/other1.jpg'
-import other2 from '../assets/images/other/other2.jpg'
-import other3 from '../assets/images/other/other3.jpg'
-import other4 from '../assets/images/other/other4.jpg'
-import other5 from '../assets/images/other/other5.jpg'
-import other6 from '../assets/images/other/other6.jpg'
-import other7 from '../assets/images/other/other7.jpg'
-import other8 from '../assets/images/other/other8.jpg'
-import other9 from '../assets/images/other/other9.jpg'
+import tmt_siargao from '../assets/images/other/tmt-siargao/img1.jpg'
+import tmt_siargao2 from '../assets/images/other/tmt-siargao/img2.jpg'
+import tmt_siargao3 from '../assets/images/other/tmt-siargao/img3.jpg'
+import tmt_siargao4 from '../assets/images/other/tmt-siargao/img4.jpg'
+import tmt_siargao5 from '../assets/images/other/tmt-siargao/img5.jpg'
+
+import pru_uk from '../assets/images/other/pru-uk/img1.jpg'
+import pru_uk2 from '../assets/images/other/pru-uk/img2.jpg'
+import pru_uk3 from '../assets/images/other/pru-uk/img3.jpg'
+import pru_uk4 from '../assets/images/other/pru-uk/img4.jpg'
+import pru_uk5 from '../assets/images/other/pru-uk/img5.jpg'
+import pru_uk6 from '../assets/images/other/pru-uk/img6.jpg'
+import pru_uk7 from '../assets/images/other/pru-uk/img7.jpg'
+
+import tmt_banilad from '../assets/images/other/tmt-banilad/img1.jpg'
+import tmt_banilad2 from '../assets/images/other/tmt-banilad/img2.jpg'
+import tmt_banilad3 from '../assets/images/other/tmt-banilad/img3.jpg'
+import tmt_banilad4 from '../assets/images/other/tmt-banilad/img4.jpg'
+import tmt_banilad5 from '../assets/images/other/tmt-banilad/img5.jpg'
+import tmt_banilad6 from '../assets/images/other/tmt-banilad/img6.jpg'
+
+import storey_rs from '../assets/images/other/2storey-rs/img1.jpg'
+import storey_rs2 from '../assets/images/other/2storey-rs/img2.jpg'
+import storey_rs3 from '../assets/images/other/2storey-rs/img3.jpg'
+import storey_rs4 from '../assets/images/other/2storey-rs/img4.jpg'
+import storey_rs5 from '../assets/images/other/2storey-rs/img5.jpg'
+import storey_rs6 from '../assets/images/other/2storey-rs/img6.jpg'
+import storey_rs7 from '../assets/images/other/2storey-rs/img7.jpg'
+import storey_rs8 from '../assets/images/other/2storey-rs/img8.jpg'
+
+import wrinkler from '../assets/images/other/wrinkler/img1.jpg'
+import wrinkler2 from '../assets/images/other/wrinkler/img2.jpg'
+import wrinkler3 from '../assets/images/other/wrinkler/img3.jpg'
+import wrinkler4 from '../assets/images/other/wrinkler/img4.jpg'
+
+import luve_heart from '../assets/images/other/luve-hearts/img1.jpg'
+import luve_heart2 from '../assets/images/other/luve-hearts/img2.jpg'
+import luve_heart3 from '../assets/images/other/luve-hearts/img3.jpg'
+import luve_heart4 from '../assets/images/other/luve-hearts/img4.jpg'
+
+import max_ty from '../assets/images/other/max-ty/img1.jpg'
+import max_ty2 from '../assets/images/other/max-ty/img2.jpg'
+import max_ty3 from '../assets/images/other/max-ty/img3.jpg'
+
 
 export const whoWeAre = { img: aboutImg };
 
@@ -85,39 +120,84 @@ export const project3 = {
 
 export const otherProjects = [
   {
-    project_name: 'TOM N TOMS Coffee Shop',
-    img: other1
+    project_name: 'TOM N TOMS Coffee Shop Siargao & Lapu-Lapu',
+    img: tmt_siargao,
+    modalImages: [
+      tmt_siargao,
+      tmt_siargao2,
+      tmt_siargao3,
+      tmt_siargao4,
+      tmt_siargao5,
+    ]
   },
   {
-    project_name: 'BodyLab',
-    img: other2
+    project_name: 'PRU Life UK',
+    img: pru_uk,
+    modalImages: [
+      pru_uk,
+      pru_uk2,
+      pru_uk3,
+      pru_uk4,
+      pru_uk5,
+      pru_uk6,
+      pru_uk7,
+    ]
   },
   {
-    project_name: 'Luve Hearts and Be Cebu Salon',
-    img: other3
+    project_name: '2 Storey Residential Project',
+    img: storey_rs,
+    modalImages: [
+      storey_rs,
+      storey_rs2,
+      storey_rs3,
+      storey_rs4,
+      storey_rs5,
+      storey_rs6,
+      storey_rs7,
+      storey_rs8,
+    ]
   },
   {
-    project_name: 'TOM N TOMS Coffee Shop',
-    img: other4
+    project_name: 'TOM N TOMS Coffee Shop Banilad',
+    img: tmt_banilad,
+    modalImages: [
+      tmt_banilad,
+      tmt_banilad2,
+      tmt_banilad3,
+      tmt_banilad4,
+      tmt_banilad5,
+      tmt_banilad6,
+    ]
   },
   {
-    project_name: 'PRU Life U.K',
-    img: other5
+    project_name: 'Wrinkler',
+    img: wrinkler,
+    modalImages: [
+      wrinkler,
+      wrinkler2,
+      wrinkler3,
+      wrinkler4,
+    ]
   },
   {
-    project_name: 'Max TY',
-    img: other6
+    project_name: "Luve Heart's and Be Cebu Salon",
+    img: luve_heart,
+    modalImages: [
+      luve_heart,
+      luve_heart2,
+      luve_heart3,
+      luve_heart4,
+    ]
   },
   {
-    project_name: 'Project name here',
-    img: other7
-  },
-  {
-    project_name: 'Winkler',
-    img: other8
-  },
-  {
-    project_name: 'TOM N TOMS Coffee Shop',
-    img: other9
+    project_name: "Max TY",
+    img: max_ty,
+    modalImages: [
+      max_ty,
+      max_ty2,
+      max_ty3,
+    ]
   }
 ];
+
+
