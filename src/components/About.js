@@ -35,9 +35,14 @@ const About = () => {
             </div>
             <div className="about__dtl">
               <div className="about__eyebrow"><span>WHO WE ARE</span></div>
-              <h2 className="about__title">Lorem ipsum dolor</h2>
+              <h2 className="about__title">Vision</h2>
               <p className="about__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit atque commodi accusamus, sapiente eius aut a officiis mollitia facilis magni odit necessitatibus voluptatibus iusto, fugiat dolore veniam amet enim.
+                A design and build firm that equally renders excellent quality services in any scale and magnitude of every project.
+              </p>
+
+              <h2 className="about__title about__title--mission">Mission</h2>
+              <p className="about__desc">
+               To continously strive in providing excellent services and commiting to achieve out clients aspirations.
               </p>
             </div>
           </div>

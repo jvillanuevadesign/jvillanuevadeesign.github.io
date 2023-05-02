@@ -22,7 +22,7 @@ import bodylab7 from '../assets/images/bodylab/img7.jpg'
 import hl1 from '../assets/images/house-letchon/img1.jpg'
 import hl2 from '../assets/images/house-letchon/img5.jpg'
 import hl3 from '../assets/images/house-letchon/img2.jpg'
-import hl4 from '../assets/images/house-letchon/img3.jpg'
+// import hl4 from '../assets/images/house-letchon/img3.jpg'
 import hl5 from '../assets/images/house-letchon/img4.jpg'
 import hl6 from '../assets/images/house-letchon/img6.jpg'
 import hl7 from '../assets/images/house-letchon/img7.jpg'
@@ -49,6 +49,11 @@ import tmt_banilad3 from '../assets/images/other/tmt-banilad/img3.jpg'
 import tmt_banilad4 from '../assets/images/other/tmt-banilad/img4.jpg'
 import tmt_banilad5 from '../assets/images/other/tmt-banilad/img5.jpg'
 import tmt_banilad6 from '../assets/images/other/tmt-banilad/img6.jpg'
+import tmt_banilad7 from '../assets/images/other/tmt-banilad/img7.jpg'
+import tmt_banilad8 from '../assets/images/other/tmt-banilad/img8.jpg'
+import tmt_banilad9 from '../assets/images/other/tmt-banilad/img9.jpg'
+import tmt_banilad10 from '../assets/images/other/tmt-banilad/img10.jpg'
+import tmt_banilad11 from '../assets/images/other/tmt-banilad/img11.jpg'
 
 import storey_rs from '../assets/images/other/2storey-rs/img1.jpg'
 import storey_rs2 from '../assets/images/other/2storey-rs/img2.jpg'
@@ -63,20 +68,67 @@ import wrinkler from '../assets/images/other/wrinkler/img1.jpg'
 import wrinkler2 from '../assets/images/other/wrinkler/img2.jpg'
 import wrinkler3 from '../assets/images/other/wrinkler/img3.jpg'
 import wrinkler4 from '../assets/images/other/wrinkler/img4.jpg'
+import wrinkler5 from '../assets/images/other/wrinkler/img5.jpg'
+import wrinkler6 from '../assets/images/other/wrinkler/img6.jpg'
+import wrinkler7 from '../assets/images/other/wrinkler/img7.jpg'
+import wrinkler8 from '../assets/images/other/wrinkler/img8.jpg'
+import wrinkler9 from '../assets/images/other/wrinkler/img9.jpg'
+import wrinkler10 from '../assets/images/other/wrinkler/img10.jpg'
+import wrinkler11 from '../assets/images/other/wrinkler/img11.jpg'
+import wrinkler12 from '../assets/images/other/wrinkler/img12.jpg'
+import wrinkler13 from '../assets/images/other/wrinkler/img13.jpg'
+import wrinkler14 from '../assets/images/other/wrinkler/img14.jpg'
+import wrinkler15 from '../assets/images/other/wrinkler/img15.jpg'
+import wrinkler16 from '../assets/images/other/wrinkler/img16.jpg'
+import wrinkler17 from '../assets/images/other/wrinkler/img17.jpg'
+import wrinkler18 from '../assets/images/other/wrinkler/img18.jpg'
+import wrinkler19 from '../assets/images/other/wrinkler/img19.jpg'
 
-import luve_heart from '../assets/images/other/luve-hearts/img1.jpg'
-import luve_heart2 from '../assets/images/other/luve-hearts/img2.jpg'
-import luve_heart3 from '../assets/images/other/luve-hearts/img3.jpg'
-import luve_heart4 from '../assets/images/other/luve-hearts/img4.jpg'
+import luve_heart from '../assets/images/luve-hearts/img1.jpg'
+import luve_heart2 from '../assets/images/luve-hearts/img2.jpg'
+import luve_heart3 from '../assets/images/luve-hearts/img3.jpg'
+import luve_heart4 from '../assets/images/luve-hearts/img4.jpg'
+import luve_heart5 from '../assets/images/luve-hearts/img5.jpg'
+import luve_heart6 from '../assets/images/luve-hearts/img6.jpg'
+import luve_heart7 from '../assets/images/luve-hearts/img7.jpg'
+import luve_heart8 from '../assets/images/luve-hearts/img8.jpg'
+import luve_heart9 from '../assets/images/luve-hearts/img9.jpg'
 
 import max_ty from '../assets/images/other/max-ty/img1.jpg'
 import max_ty2 from '../assets/images/other/max-ty/img2.jpg'
 import max_ty3 from '../assets/images/other/max-ty/img3.jpg'
-
+import max_ty4 from '../assets/images/other/max-ty/img4.jpg'
+import max_ty5 from '../assets/images/other/max-ty/img5.jpg'
+import max_ty6 from '../assets/images/other/max-ty/img6.jpg'
+import max_ty7 from '../assets/images/other/max-ty/img7.jpg'
+import max_ty8 from '../assets/images/other/max-ty/img8.jpg'
+import max_ty9 from '../assets/images/other/max-ty/img9.jpg'
+import max_ty10 from '../assets/images/other/max-ty/img10.jpg'
+import max_ty11 from '../assets/images/other/max-ty/img11.jpg'
+import max_ty12 from '../assets/images/other/max-ty/img12.jpg'
+import max_ty13 from '../assets/images/other/max-ty/img13.jpg'
+import max_ty14 from '../assets/images/other/max-ty/img14.jpg'
+import max_ty15 from '../assets/images/other/max-ty/img15.jpg'
+import max_ty16 from '../assets/images/other/max-ty/img16.jpg'
+import max_ty17 from '../assets/images/other/max-ty/img17.jpg'
 
 export const whoWeAre = { img: aboutImg };
 
 export const project1 = {
+  main: luve_heart,
+  secondary: luve_heart2,
+  slider: [
+    luve_heart3,
+    luve_heart4,
+    luve_heart5,
+    luve_heart6,
+    luve_heart7,
+    luve_heart8,
+    luve_heart9
+  ]
+}
+
+export const project2 = {
   main: secote1,
   secondary: secote2,
   slider: [
@@ -92,7 +144,7 @@ export const project1 = {
   ]
 }
 
-export const project2 = {
+export const project3 = {
   main: bodylab1,
   secondary: bodylab2,
   slider: [
@@ -104,7 +156,7 @@ export const project2 = {
   ]
 }
 
-export const project3 = {
+export const project4 = {
   main: hl1,
   secondary: hl2,
   slider: [
@@ -120,7 +172,7 @@ export const project3 = {
 
 export const otherProjects = [
   {
-    project_name: 'TOM N TOMS Coffee Shop Siargao & Lapu-Lapu',
+    project_name: 'TOM N TOMS Coffee Siargao',
     img: tmt_siargao,
     modalImages: [
       tmt_siargao,
@@ -131,7 +183,7 @@ export const otherProjects = [
     ]
   },
   {
-    project_name: 'PRU Life UK',
+    project_name: 'PRU Life UK, City Soho',
     img: pru_uk,
     modalImages: [
       pru_uk,
@@ -144,7 +196,7 @@ export const otherProjects = [
     ]
   },
   {
-    project_name: '2 Storey Residential Project',
+    project_name: "Kate's House, San Jose Cebu City",
     img: storey_rs,
     modalImages: [
       storey_rs,
@@ -158,7 +210,7 @@ export const otherProjects = [
     ]
   },
   {
-    project_name: 'TOM N TOMS Coffee Shop Banilad',
+    project_name: 'TOM N TOMS Coffee Banilad',
     img: tmt_banilad,
     modalImages: [
       tmt_banilad,
@@ -167,35 +219,59 @@ export const otherProjects = [
       tmt_banilad4,
       tmt_banilad5,
       tmt_banilad6,
+      tmt_banilad7,
+      tmt_banilad8,
+      tmt_banilad9,
+      tmt_banilad10,
+      tmt_banilad11,
     ]
   },
   {
-    project_name: 'Wrinkler',
+    project_name: 'Winkler Compound Lapu-Lapu City',
     img: wrinkler,
     modalImages: [
       wrinkler,
       wrinkler2,
       wrinkler3,
       wrinkler4,
+      wrinkler5,
+      wrinkler6,
+      wrinkler7,
+      wrinkler8,
+      wrinkler9,
+      wrinkler10,
+      wrinkler11,
+      wrinkler12,
+      wrinkler13,
+      wrinkler14,
+      wrinkler15,
+      wrinkler16,
+      wrinkler17,
+      wrinkler18,
+      wrinkler19,
     ]
   },
   {
-    project_name: "Luve Heart's and Be Cebu Salon",
-    img: luve_heart,
-    modalImages: [
-      luve_heart,
-      luve_heart2,
-      luve_heart3,
-      luve_heart4,
-    ]
-  },
-  {
-    project_name: "Max TY",
+    project_name: "Ty Residence Addition & Renovation",
     img: max_ty,
     modalImages: [
       max_ty,
       max_ty2,
       max_ty3,
+      max_ty4,
+      max_ty5,
+      max_ty6,
+      max_ty7,
+      max_ty8,
+      max_ty9,
+      max_ty10,
+      max_ty11,
+      max_ty12,
+      max_ty13,
+      max_ty14,
+      max_ty15,
+      max_ty16,
+      max_ty17
     ]
   }
 ];

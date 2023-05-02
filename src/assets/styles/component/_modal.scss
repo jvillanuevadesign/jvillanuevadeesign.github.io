@@ -16,7 +16,11 @@
   height: 88%;
   width: 80%;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 24px;
+
+  @include mq(1024, min) {
+    padding: 0 32px;
+  }
 }
 
 .modal__head {
@@ -25,8 +29,19 @@
   padding: 20px 0;
 
   h2 {
-    font-size: 32px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 130%;
+
+    @include mq(768, min) {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    @include mq(1024, min) {
+      font-size: 32px;
+      font-weight: 500;
+    }
   }
 
   svg {
@@ -59,13 +74,18 @@
     width: auto;
     display: block;
     margin: 0 auto;
+
+    @include mq(1024, max) {
+      width: 100%;
+      object-fit: contain;
+    }
   }
 }
 
 .modal_thumb {
   height: 100px;
   margin-top: 32px;
-  overflow: visible;
+  overflow: hidden;
 
   img {
     width: 100%;

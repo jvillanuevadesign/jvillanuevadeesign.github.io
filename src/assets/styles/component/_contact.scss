@@ -36,16 +36,17 @@
     margin-bottom: 50px;
     color: $color-gray2;
   }
+
+  &-number {
+    display: flex;
+  }
 }
 
 .contact__info-btn {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-
-  @include mq(855, max) {
-    align-items: center;
-    flex-direction: column;
-  }
 }
 
 .contact__info-btn-link {
@@ -55,14 +56,21 @@
   gap: 15px;
   box-shadow: inset 0 0 0 1px $color-gray2;
   height: 60px;
-  width: 50%;
+  width: 47%;
   color: $color-gray2;
   padding: 0 20px;
   position: relative;
 
-  @include mq(855, max) {
+  @include mq(767, max) {
     width: 100%;
     max-width: 500px;
+  }
+
+  &:last-child {
+    @include mq(855, max) {
+      width: 100%;
+      max-width: 350px;
+    }
   }
 
   &::before,

@@ -43,8 +43,9 @@
 }
 
 .project__right-img {
-  @include aspect-ratio(546, 346);
+  display: block;
   overflow: hidden;
+  @include aspect-ratio(546, 346);
 
   img {
     position: absolute;
@@ -58,8 +59,10 @@
 }
 
 .project__left-img {
-  @include aspect-ratio(794, 575);
+  display: block;
   overflow: hidden;
+  @include aspect-ratio(794, 575);
+
 
   img {
     position: absolute;
@@ -164,7 +167,13 @@
   }
 
   img {
-    height: 300px;
+    height: 180px;
+    min-width: 225px;
+
+    @include mq(1024, min) {
+      height: 300px;
+      min-width: 180px;
+    }
   }
 
   .swiper-slide {

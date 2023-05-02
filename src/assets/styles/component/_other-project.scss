@@ -96,9 +96,13 @@
   h3 {
     position: relative;
     color: $color-white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
     z-index: 1;
+
+    @include mq(1024, min) {
+      font-size: 20px;
+    }
     // transition: opacity 500ms ease-in-out;
     // transition-delay: 300ms;
     // opacity: 0;

@@ -10,9 +10,13 @@ const Contact = () => {
           <p>For inquiries, please call or email us.</p>
 
           <div className="contact__info-btn">
-            <a href="tel:1234567890" className="contact__info-btn-link">
+            <a href="tel:+639177727097" className="contact__info-btn-link">
               <i className="ico ico--phone"></i>
-              <span>123-456-7890</span>
+              <span>0917-772-7097</span>
+            </a>
+            <a href="tel:+639255021915" className="contact__info-btn-link">
+              <i className="ico ico--phone"></i>
+              <span>0925-502-1915</span>
             </a>
             <a href="mailto:j.villanuevadesign@gmail.com"  className="contact__info-btn-link">
               <i className="ico ico--email"></i>

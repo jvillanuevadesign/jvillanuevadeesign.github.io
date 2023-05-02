@@ -19,7 +19,7 @@ const OtherProjects = () => {
   return (
     <section className="jvd-section jvd-section--other-project">
       <div className="jvd-container">
-        <h2 className="jvd-section__title">Other Projects</h2>
+        <h2 className="jvd-section__title">More Projects</h2>
         
         <ul className="other-project">
           {

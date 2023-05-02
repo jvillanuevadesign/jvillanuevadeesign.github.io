@@ -70,10 +70,15 @@ const Hero = () => {
 
             <div className="hero__contact">
               <div className="hero__contact-item">
-                <a href="tel:+18475555555" className="hero__contact-link">
-                  <i className="ico ico--phone"></i>
-                  <span>123-456-789</span>
-                </a>
+                <i className="ico ico--phone"></i>
+                <div className="hero__contac-number">
+                  <a href="tel:+639255021915" className="hero__contact-link">
+                    <span>0925-502-1915</span>
+                  </a>
+                  <a href="tel:+639177727097" className="hero__contact-link">
+                    <span>0917-772-7097</span>
+                  </a>
+                </div>
               </div>
               <div className="hero__contact-item">
                 <a href="mailto:j.villanuevadesign@gmail.com" className="hero__contact-link">

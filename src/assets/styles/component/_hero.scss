@@ -66,9 +66,14 @@
   }
 
   .is-loaded & {
-    height: calc(100vh - 112px);
-    width: calc(100vw - 112px);
+    height: calc(100vh - 48px);
+    width: calc(100vw - 48px);
     opacity: 1;
+
+    @include mq(1024, min) {
+      height: calc(100vh - 112px);
+      width: calc(100vw - 112px);
+    }
   }
 }
 
@@ -253,18 +258,14 @@
   bottom: -2px;
   right: -1px;
   height: 60px;
-  width: 80%;
-  max-width: 240px;
+  width: 90%;
+  max-width: 270px;
   padding: 10px 22px;
   background-color: $color-white;
   z-index: 2;
 
   @include mq(650, min) {
-    max-width: 465px;
-  }
-
-  @include mq(1024, min) {
-    width: 465px;
+    max-width: 490px;
   }
 
   span {
@@ -273,6 +274,10 @@
     font-size: 14px;
     margin-left: 10px;
   }
+
+  // &-number {
+    
+  // }
 }
 .hero__contact-item {
   position: relative;

@@ -59,6 +59,14 @@ const Modal = ({selected_project, handleModalStatusChange}) => {
             watchSlidesProgress={true}
             modules={[FreeMode, Navigation, Thumbs]}
             className="modal_thumb"
+            breakpoints={{
+              0: {
+                slidesPerView: 1.5,
+              },
+              1024: {
+                slidesPerView: 8,
+              },
+            }}
           >
             {
               thumbSlider && thumbSlider.map((slider, idx) => {
